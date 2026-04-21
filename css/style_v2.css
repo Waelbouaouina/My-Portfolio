@@ -1750,3 +1750,91 @@ section {
     transform: scale(1);
   }
 }
+
+/* =============================
+   Additional Responsive Fixes
+   ============================= */
+
+/* Modal: stack on mobile */
+@media (max-width: 768px) {
+  .modal-body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 45vh 1fr;
+  }
+
+  .modal-container {
+    height: 92vh;
+    border-radius: 16px;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+}
+
+/* Experience video on mobile */
+@media (max-width: 768px) {
+  .experience-video-container {
+    margin-top: 1rem;
+  }
+
+  .experience-video-container:hover {
+    transform: none;
+  }
+
+  .play-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.4rem;
+  }
+
+  .video-badge {
+    font-size: 0.65rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  .integration-status {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.8rem;
+  }
+
+  .integration-status i {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .project-card {
+    padding: 1.2rem;
+  }
+
+  .experience-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .experience-date {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .lightbox-close {
+    top: 15px;
+    right: 15px;
+    font-size: 35px;
+  }
+}
