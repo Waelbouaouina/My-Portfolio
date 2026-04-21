@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "Lancer le Portfolio",
+            "request": "launch",
+            "url": "http://localhost:8080/"
+        }
+    ]
+}
